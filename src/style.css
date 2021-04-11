@@ -1,0 +1,95 @@
+.inputfile{
+    display: none;
+}
+.inputfile + label {
+    font-size: 1.25em;
+    font-weight: 700;
+    display: inline-block;
+    position: absolute;
+    background-color: grey;
+    height: 100%;
+    padding-left:2%;
+    padding-right: 2%;
+    right:0
+}
+
+.inputfile:focus + label,
+.inputfile + label:hover {
+    cursor: pointer;
+    color: white;
+}
+
+.componentAnim1 {
+    animation: fadeInAnimation1 ease 1.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.componentAnim2 {
+    animation: fadeInAnimation2 ease 1.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+  
+@keyframes fadeInAnimation1 {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+
+@keyframes fadeInAnimation2 {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+
+.textAnim1 {
+    animation: textAnimation1 ease 1.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+  
+@keyframes textAnimation1 {
+    0% {
+        transform: translateY(-50%)
+    }
+    100% {
+        transform: translateY(0);
+     }
+}
+
+.textAnim2 {
+    animation: textAnimation2 ease 1.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+  
+@keyframes textAnimation2 {
+    0% {
+        transform: translateY(50%)
+    }
+    100% {
+        transform: translateY(0);
+     }
+}
+
+.successAnim {
+    animation: fadeInAnimation3 ease 1.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+  
+@keyframes fadeInAnimation3 {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
